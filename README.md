@@ -3,8 +3,8 @@
 Bamazon is a command line node app that runs a MySQL database. Allows users to purchase items and keeps and updates the product inventory.
 
 <h2>Built With</h2>
-node.js
-MySQL
+node.js<br />
+MySQL<br />
 JavaScript
 
 <h2>Author</h2>
