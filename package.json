@@ -1,0 +1,24 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "<h2>Bamazon</h2> Bamazon is a command line node app that runs a MySQL database. Allows users to purchase items and updates the product inventory.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alibain10/bamazon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alibain10/bamazon/issues"
+  },
+  "homepage": "https://github.com/alibain10/bamazon#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^6.0.0",
+    "mysql": "^2.15.0"
+  }
+}
