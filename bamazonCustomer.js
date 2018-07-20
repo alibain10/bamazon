@@ -67,9 +67,9 @@ function productID() {
     connection.query("SELECT id, product_name, stock_quantity, price FROM products WHERE ?", { id: answer.productID }, function(err, results) {
         if (err) throw err;
         if (results[0].stock_quantity >= answer.units) {
-            var itemsRemaining = results[0].stock_quantity - answer.quantity;
-            var purchaseTotal = answer.quantity * results[0].price;
-            connection.query(`UPDATE products SET stock_quantity=${itemsRemaining} WHERE id=${answer.productD}`, function(err, results) {
+            var itemsRemaining = results[0].stock_quantity - answer.units;
+            var purchaseTotal = answer.units * results[0].price;
+            connection.query(`UPDATE products SET stock_quantity=${itemsRemaining} WHERE id=${answer.productID}`, function(err, results) {
                 if (err) throw err;
                 console.log(`Your total is: ${purchaseTotal}`);
                 continueShopping();
